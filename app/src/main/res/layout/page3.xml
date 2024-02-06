@@ -84,6 +84,7 @@
 
     </LinearLayout>
 
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -313,13 +314,13 @@
 
             <TextView
 
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:text="1231321-45454-488"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:textSize="20dp">
+                android:textSize="20dp"
+                android:textStyle="bold">
 
             </TextView>
         </LinearLayout>
@@ -337,7 +338,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FD0036"
                 android:gravity="center_horizontal"
-                android:text="1231321-45454-488"
+                android:text="Show ticket"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold">

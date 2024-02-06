@@ -71,7 +71,7 @@
         <Button
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
+
             android:text="Ticket"
             android:backgroundTint="#F04D5B"
             android:textColor="@color/white" />

@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/circulo"
+        android:orientation="vertical"
+        android:paddingLeft="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/foto">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/add"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+    </ImageButton>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:text="Italo Navia"
+        android:textSize="35dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:text="ItaloNavia@boliviano.com"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#EC294F"
+        android:text="Personal data"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/user">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#EC294F"
+        android:text="Payment Methods"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/user">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#EC294F"
+        android:text="Settings"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/user">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#EC294F"
+        android:text="Change Password"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/user">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#EC294F"
+        android:text="Sing Out"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/user">
+
+    </com.google.android.material.button.MaterialButton>
+
+
+</LinearLayout>
