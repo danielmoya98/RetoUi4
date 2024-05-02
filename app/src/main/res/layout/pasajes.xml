@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical"
     android:background="@color/white"
     android:orientation="vertical">
 
@@ -11,8 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="25dp"
-        android:layout_marginTop="75dp"
-        android:text="Book tickets for your"
+        android:text="Buscar garaje o "
         android:textSize="35dp"
         >
 
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="25dp"
         android:paddingBottom="30dp"
-        android:text="next trip!"
+        android:text="estacionamientos!"
         android:textSize="35dp"
         android:textStyle="bold">
 
@@ -33,7 +33,7 @@
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:background="@drawable/back_cor"
+
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
@@ -44,7 +44,7 @@
             android:layout_height="60dp"
             android:backgroundTint="#FE0036"
             android:padding="8dp"
-            android:text="Ida y Vuelta"
+            android:text="Automovil"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -55,7 +55,7 @@
             android:layout_height="60dp"
             android:backgroundTint="@color/white"
             android:padding="8dp"
-            android:text="Solo Ida"
+            android:text="Motocicleta"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -74,8 +74,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-
-            android:text="From">
+            android:text="Ciudad">
 
         </TextView>
 
@@ -83,12 +82,12 @@
             style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Select a country"
+            android:hint="Seleccionar ciudad"
             android:textColorHint="@color/black"
 
             app:boxStrokeColor="@color/white"
             app:endIconTint="@color/white"
-            app:startIconDrawable="@drawable/avion">
+            >
 
             <AutoCompleteTextView
                 android:id="@+id/SecondautoCompleteTextView"
@@ -96,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginEnd="25dp"
-                android:background="@drawable/inputcor"
+android:backgroundTint="#e6e0e9"
                 android:paddingStart="8dp"
                 android:textColorHint="@color/black"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -110,7 +109,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:text="At">
+            android:text="Zona">
 
         </TextView>
 
@@ -118,10 +117,10 @@
             style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Select a country"
+            android:hint="Seleccionar zona"
             android:textColorHint="@color/black"
             app:endIconTint="@color/white"
-            app:startIconDrawable="@drawable/avion">
+            >
 
             <AutoCompleteTextView
                 android:id="@+id/autoCompleteTextView"
@@ -129,7 +128,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginEnd="25dp"
-                android:background="@drawable/inputcor"
+                android:backgroundTint="#e6e0e9"
                 android:paddingStart="8dp"
                 android:textColorHint="#FE0036"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -155,7 +154,7 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="Depart">
+                android:text="Fecha de entrada">
 
             </TextView>
 
@@ -171,8 +170,8 @@
                     android:layout_marginStart="20dp"
 
                     android:layout_marginEnd="20dp"
-                    android:background="@drawable/inputcor"
-                    android:drawableStart="@drawable/calendar"
+
+
                     android:drawablePadding="8dp"
                     android:paddingStart="8dp"
                     android:textColorHint="#FE0036"
@@ -194,7 +193,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="Return">
+                android:text="Fecha de salida">
 
             </TextView>
 
@@ -209,8 +208,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="20dp"
-                    android:background="@drawable/inputcor"
-                    android:drawableStart="@drawable/calendar"
+
+
                     android:drawablePadding="8dp"
                     android:paddingStart="15dp"
                     android:textColorHint="#FE0036"
@@ -240,7 +239,7 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="Passengers">
+                android:text="Hora de entrada">
 
             </TextView>
 
@@ -255,7 +254,7 @@
                     android:layout_marginStart="20dp"
 
                     android:layout_marginEnd="20dp"
-                    android:background="@drawable/inputcor"
+
                     android:paddingStart="15dp"
                     android:textColorHint="#FE0036"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -276,7 +275,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="Class">
+                android:text="Hora de salida">
 
             </TextView>
 
@@ -290,7 +289,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="20dp"
-                    android:background="@drawable/inputcor"
+
                     android:paddingStart="15dp"
                     android:textColorHint="#FE0036"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -303,15 +302,18 @@
     </LinearLayout>
 
     <Button
-        android:layout_width="360dp"
+        android:id="@+id/botonBuscarEstacionamientos"
+        android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:backgroundTint="#FE0036"
-        android:text="Search for tickets"
-        android:textColor="@color/white">
+        android:onClick="cambiarLayout"
+        android:text="Buscar estacionamientos"
+        android:textColor="@color/white" />
 
-    </Button>
 
 
 </LinearLayout>

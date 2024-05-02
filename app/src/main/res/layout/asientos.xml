@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
+    android:gravity="center_vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
 
@@ -11,13 +12,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
+
         android:orientation="horizontal"
         android:paddingLeft="16dp"
         android:paddingRight="16dp">
 
         <!-- Texto al inicio -->
         <ImageView
+            android:visibility="invisible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -35,9 +37,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity=""
+            android:layout_gravity="center_horizontal"
             android:gravity="center"
-            android:text="Select Seat"
+            android:text="Seleccionar Lugar"
             android:textColor="@color/black"
             android:textSize="30dp"
             android:textStyle="bold" />
@@ -66,6 +68,8 @@
         android:layout_marginTop="25dp"
         android:orientation="horizontal"
         android:paddingLeft="16dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
         android:paddingRight="16dp">
 
         <!-- Texto al inicio -->
@@ -82,19 +86,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:text="Standard"
+            android:text="Disponibles"
             android:textSize="20dp"
             android:textStyle="bold" />
 
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
             android:layout_marginRight="8dp"
             android:background="@drawable/cuadrado1"
             android:backgroundTint="#DFDADA"
@@ -105,32 +107,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:text="Premium"
+            android:text="Ocupados"
             android:textSize="20dp"
             android:textStyle="bold" />
 
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginRight="8dp"
-            android:background="@drawable/cuadrado1"
-            android:backgroundTint="#A6A1A2"
-            android:contentDescription="Botón Izquierdo"
-            tools:ignore="TouchTargetSizeCheck" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="end"
-            android:text="Token"
-            android:textSize="20dp"
-            android:textStyle="bold" />
 
         <!-- Espacio entre los textos (puedes ajustar el tamaño según tu preferencia) -->
 
@@ -142,7 +124,6 @@
         android:layout_height="435dp"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="25dp"
-        android:background="@drawable/Subtract"
         android:orientation="vertical">
 
         <LinearLayout
@@ -498,7 +479,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="start"
-            android:text="Seat" />
+            android:text="Lugar" />
 
         <!-- Espacio entre los textos (puedes ajustar el tamaño según tu preferencia) -->
         <Space
@@ -530,7 +511,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="start"
-            android:text="Price" />
+            android:text="Precio" />
 
         <!-- Espacio entre los textos (puedes ajustar el tamaño según tu preferencia) -->
         <Space
@@ -543,7 +524,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:text="15.90 $"
+            android:text="15.90 Bs"
             android:textSize="15dp"
             android:textStyle="bold"/>
 
@@ -561,7 +542,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="start"
-            android:text="Payment Method" />
+            android:text="Metodo de pago" />
 
         <!-- Espacio entre los textos (puedes ajustar el tamaño según tu preferencia) -->
         <Space
@@ -582,7 +563,7 @@
             android:gravity="end"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:text="Salary" />
+            android:text="Contado" />
 
     </LinearLayout>
 
@@ -592,8 +573,9 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
         android:backgroundTint="#FE0036"
-        android:text="Pay 15.90 $ "
-        android:textColor="@color/white">
+        android:text="Pagar 15.90 Bs "
+        android:textColor="@color/white"
+        android:onClick="cambiarLayout">
 
     </Button>
 

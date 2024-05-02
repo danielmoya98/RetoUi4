@@ -22,7 +22,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/free_icon_2"
-            android:gravity="start" />
+            android:gravity="start"
+            android:visibility="invisible" />
 
         <!-- Espacio entre el primer y segundo texto -->
         <Space
@@ -36,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity=""
             android:gravity="center"
-            android:text="Tickets"
+            android:text="Mis Reservas"
             android:textColor="@color/white"
             android:textSize="30dp"
             android:textStyle="bold" />
@@ -52,9 +53,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="@color/white"
             android:background="@drawable/bar"
-            android:gravity="end" />
+            android:backgroundTint="@color/white"
+            android:gravity="end"
+            android:visibility="invisible" />
 
     </LinearLayout>
 
@@ -71,7 +73,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
-            android:text="Ticket"
+            android:text="Activos"
             android:textColor="@color/black" />
 
         <!-- Botón "Expired" -->
@@ -80,23 +82,23 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:backgroundTint="#FD0036"
-            android:text="Expired" />
+            android:text="Expirados" />
 
     </LinearLayout>
 
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="420dp"
+        android:layout_height="400dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp"
-        android:background="@drawable/Subtract" >
+        android:background="@drawable/subtract"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:orientation="horizontal"
             android:padding="16dp">
 
@@ -105,10 +107,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="start"
+                android:text="Junio 16, 2021"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:text="June 16, 2021"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <!-- Espacio entre los textos (puedes ajustar el tamaño según tu preferencia) -->
             <Space
@@ -120,9 +122,9 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="end"
-                android:text="Active"
                 android:backgroundTint="#FD0036"
+                android:gravity="end"
+                android:text="Activo"
                 android:textSize="20dp" />
 
         </LinearLayout>
@@ -131,16 +133,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingRight="16dp"
-            android:paddingLeft="16dp">
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
 
             <!-- Texto al inicio -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="start"
-                android:text="Bus Station"
-                />
+                android:text="Ubicacion" />
 
             <!-- Espacio entre los textos (puedes ajustar el tamaño según tu preferencia) -->
             <Space
@@ -153,7 +154,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="end"
-                android:text="Departure" />
+                android:text="Desde"
+                android:layout_marginRight="20dp"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Texto al final -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Hasta"
+                android:layout_marginRight="10dp"/>
 
         </LinearLayout>
 
@@ -161,85 +175,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingRight="16dp"
-            android:paddingLeft="16dp">
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
 
             <!-- Texto al inicio -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="start"
-                android:textStyle="bold"
-                android:text="Vantaa"
+                android:text="M.Campesino"
                 android:textSize="20dp"
-                />
+                android:textStyle="bold" />
 
             <!-- Espacio entre los textos (puedes ajustar el tamaño según tu preferencia) -->
             <Space
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight="0.25" />
 
             <!-- Texto al final -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="end"
-                android:textStyle="bold"
                 android:text="16:30"
-                android:textSize="20dp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingRight="16dp"
-            android:paddingLeft="16dp">
-
-            <!-- Texto al inicio -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="start"
-                android:text="Bus Station"
-                />
-
-            <!-- Espacio entre los textos (puedes ajustar el tamaño según tu preferencia) -->
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-
-            <!-- Texto al final -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="end"
-                android:text="Arrival" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingRight="16dp"
-            android:paddingLeft="16dp">
-
-            <!-- Texto al inicio -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="start"
-                android:textStyle="bold"
-                android:text="Oulu"
                 android:textSize="20dp"
-                />
-
-            <!-- Espacio entre los textos (puedes ajustar el tamaño según tu preferencia) -->
+                android:textStyle="bold" />
             <Space
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -250,19 +211,56 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="end"
-                android:textStyle="bold"
-                android:text="20:30"
-                android:textSize="20dp"/>
+                android:text="16:30"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingRight="16dp"
-            android:paddingLeft="16dp">
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <!-- Texto al inicio -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Calle" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <!-- Texto al inicio -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Emilio Hoschman 456 Esq Rene Calvo"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
 
             <!-- Texto al inicio -->
             <ImageButton
@@ -279,29 +277,29 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:gravity="end"
-                android:textStyle="bold"
                 android:text="13"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
 
             <ImageButton
-                android:backgroundTint="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="15dp"
                 android:background="@drawable/bus"
+                android:backgroundTint="@color/black"
                 android:contentDescription="Botón Izquierdo"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="end"
-                android:textStyle="bold"
                 android:layout_marginLeft="5dp"
+                android:gravity="end"
                 android:text="13"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
@@ -313,7 +311,6 @@
             android:padding="16dp">
 
             <TextView
-
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -323,14 +320,15 @@
                 android:textStyle="bold">
 
             </TextView>
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingRight="16dp"
-            android:paddingLeft="16dp">
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
 
             <Button
 
@@ -338,7 +336,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FD0036"
                 android:gravity="center_horizontal"
-                android:text="Show ticket"
+                android:text="Mostrar Informacion"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold">
@@ -347,7 +345,6 @@
         </LinearLayout>
 
     </LinearLayout>
-
 
 
 </LinearLayout>
