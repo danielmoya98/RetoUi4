@@ -13,10 +13,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.pasajes);
     }
 
-    // Método para cambiar de layout
     public void cambiarLayout(View view) {
 
         Intent intent = new Intent(this, Estacionamiento.class);
+        startActivity(intent);
+    }
+    public void cambiarLayout3(View view) {
+
+        Intent intent = new Intent(this, Perfil.class);
+        startActivity(intent);
+    }
+
+    public void cambiarLayout4(View view) {
+
+        Intent intent = new Intent(this, Reservas.class);
         startActivity(intent);
     }
 }
