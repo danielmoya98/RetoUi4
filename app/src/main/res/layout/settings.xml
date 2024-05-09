@@ -6,13 +6,14 @@
     android:background="@color/white"
     android:orientation="vertical"
     android:padding="16dp"
+    android:gravity="center_vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="75dp"
+
         android:background="@drawable/circulo"
         android:orientation="vertical"
         android:paddingLeft="25dp">
@@ -72,7 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:backgroundTint="#EC294F"
-        android:text="Personal data"
+        android:text="Informacion Personal"
         app:cornerRadius="10dp"
         app:icon="@drawable/user">
 
@@ -83,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:backgroundTint="#EC294F"
-        android:text="Payment Methods"
+        android:text="Metodos de pago"
         app:cornerRadius="10dp"
         app:icon="@drawable/user">
 
@@ -94,7 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:backgroundTint="#EC294F"
-        android:text="Settings"
+        android:text="Configuraciones"
         app:cornerRadius="10dp"
         app:icon="@drawable/user">
 
@@ -105,7 +106,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:backgroundTint="#EC294F"
-        android:text="Change Password"
+        android:text="Cambiar contraseña"
         app:cornerRadius="10dp"
         app:icon="@drawable/user">
 
@@ -116,7 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:backgroundTint="#EC294F"
-        android:text="Sing Out"
+        android:text="Cerrar Sesion"
         app:cornerRadius="10dp"
         app:icon="@drawable/user">
 

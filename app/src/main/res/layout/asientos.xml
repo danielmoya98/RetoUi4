@@ -135,8 +135,7 @@
             android:paddingLeft="50dp"
             android:paddingRight="50dp">
 
-            <!-- Texto al inicio -->
-            <ImageButton
+          <ImageButton
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
@@ -492,9 +491,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:textSize="15dp"
             android:text="13"
-            android:textStyle="bold"/>
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
 
     </LinearLayout>
 
@@ -526,7 +526,8 @@
             android:gravity="end"
             android:text="15.90 Bs"
             android:textSize="15dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
 
     </LinearLayout>
 
@@ -557,27 +558,31 @@
             android:layout_marginRight="5dp">
 
         </ImageView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="end"
+            android:text="Contado"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:text="Contado" />
+            tools:ignore="TextSizeCheck" />
 
     </LinearLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:layout_width="360dp"
         android:layout_height="65dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
         android:backgroundTint="#FE0036"
-        android:text="Pagar 15.90 Bs "
+        android:text="Pagar 15.90 Bs"
         android:textColor="@color/white"
-        android:onClick="cambiarLayout">
+        android:onClick="cambiarLayout"
+        style="@style/Widget.MaterialComponents.Button"/>
 
-    </Button>
+
+
 
 
 

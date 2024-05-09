@@ -63,7 +63,7 @@
 
     <!-- Segundo LinearLayout (Horizontal) -->
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="383dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:gravity="center"
@@ -74,8 +74,8 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
 
-            android:text="Activos"
             android:backgroundTint="#F04D5B"
+            android:text="Activos"
             android:textColor="@color/white" />
 
         <!-- Botón "Expired" -->
@@ -83,9 +83,9 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:textColor="@color/black"
             android:backgroundTint="@color/white"
-            android:text="Expirados" />
+            android:text="Expirados"
+            android:textColor="@color/black" />
     </LinearLayout>
 
     <ImageView
